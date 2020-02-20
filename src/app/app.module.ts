@@ -15,7 +15,7 @@ import { ConfirmationModalComponent } from './confirmation-modal/confirmation-mo
     TodoComponent,
     CreateTodoComponent,
     TodoListComponent,
-    NgbModal,
+    //NgbModal, -- I get an error with this ... guess I dont need it here
     ConfirmationModalComponent
   ],
   imports: [
