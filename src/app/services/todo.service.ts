@@ -5,6 +5,7 @@ import { Itodo } from '../interfaces/itodo'
   providedIn: 'root'
 })
 export class TodoService {
+
   todoList: Itodo[] = [ 
     {id:1 , title:'Install Angular CLI', description:'' }
   ];
@@ -12,14 +13,21 @@ export class TodoService {
  
   constructor() { }
 
-  addTodo(){
-
+  addTodo() :void{
+    this.todoList.push({
+      id: this.todoId++,
+      title:'',
+      description:''
+    });
   }
-  deleteTodo(){
-
+  deleteTodo(todo: any){
+    // kept getting an error with todoItem
+    // const index = this.todoList.findIdex(this.todoItem => todoItem === todo);
+    // this.todoList.splice(index, 1);
   }
-  getTodo(){
-    
+
+  getTodos(){
+    return this.todoList;
   }
   
 }
