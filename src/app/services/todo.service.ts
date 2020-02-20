@@ -9,6 +9,7 @@ export class TodoService {
   todoList: Itodo[] = [ 
     {id:1 , title:'Install Angular CLI', description:'' }
   ];
+  todoTitle: string;
   todoId: number = 0;
  
   constructor() { }
